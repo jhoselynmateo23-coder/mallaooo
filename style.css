@@ -1,0 +1,70 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f4f4f4;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.ciclo {
+  background: linear-gradient(135deg, #b3e5fc, #e1f5fe);
+  border-radius: 10px;
+  padding: 10px;
+  width: 220px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.ciclo h2 {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.curso {
+  background: white;
+  border-radius: 5px;
+  margin: 5px 0;
+  padding: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.curso:hover {
+  background: #d0f0ff;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background: white;
+  margin: 10% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 15px;
+  font-size: 1.5em;
+  cursor: pointer;
+}

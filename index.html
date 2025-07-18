@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Malla Curricular - Derecho</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Malla Curricular - Derecho</h1>
+  <div class="grid-container">
+    <!-- Ciclos -->
+    <!-- Esto se puede automatizar luego con JS o desde un archivo JSON -->
+    <div class="ciclo"><h2>Ciclo 1</h2>
+      <div class="curso" onclick="mostrarInfo('Comprensión Lectora')">Comprensión Lectora</div>
+      <div class="curso" onclick="mostrarInfo('Laboratorio de Herramientas')">Laboratorio de Herramientas</div>
+      <div class="curso" onclick="mostrarInfo('Estrategias y Técnicas de Aprendizaje')">Estrategias y Técnicas de Aprendizaje</div>
+      <div class="curso" onclick="mostrarInfo('Fundamentos Filosóficos')">Fundamentos Filosóficos</div>
+      <div class="curso" onclick="mostrarInfo('Introducción al Derecho')">Introducción al Derecho</div>
+      <div class="curso" onclick="mostrarInfo('Antropología Filosófica')">Antropología Filosófica</div>
+    </div>
+    <div class="ciclo"><h2>Ciclo 2</h2>
+      <div class="curso" onclick="mostrarInfo('Comprensión y Redacción Académica')">Comprensión y Redacción Académica</div>
+      <div class="curso" onclick="mostrarInfo('Teoría General del Estado')">Teoría General del Estado</div>
+      <div class="curso" onclick="mostrarInfo('Historia del Derecho Peruano')">Historia del Derecho Peruano</div>
+      <div class="curso" onclick="mostrarInfo('Derecho Constitucional I')">Derecho Constitucional I</div>
+      <div class="curso" onclick="mostrarInfo('Electivo General 1')">Electivo General 1</div>
+    </div>
+    <div class="ciclo"><h2>Ciclo 3</h2>
+      <div class="curso" onclick="mostrarInfo('Redacción Jurídica')">Redacción Jurídica</div>
+      <div class="curso" onclick="mostrarInfo('Laboratorio de Informática Jurídica')">Laboratorio de Informática Jurídica</div>
+      <div class="curso" onclick="mostrarInfo('Derecho Penal Parte General')">Derecho Penal Parte General</div>
+      <div class="curso" onclick="mostrarInfo('Derecho Constitucional II')">Derecho Constitucional II</div>
+      <div class="curso" onclick="mostrarInfo('Acto Jurídico')">Acto Jurídico</div>
+      <div class="curso" onclick="mostrarInfo('Electivo General 2')">Electivo General 2</div>
+    </div>
+    <div class="ciclo"><h2>Ciclo 4</h2>
+      <div class="curso" onclick="mostrarInfo('Derecho de las Personas')">Derecho de las Personas</div>
+      <div class="curso" onclick="mostrarInfo('Derecho Procesal Constitucional')">Derecho Procesal Constitucional</div>
+      <div class="curso" onclick="mostrarInfo('Teoría General del Proceso')">Teoría General del Proceso</div>
+      <div class="curso" onclick="mostrarInfo('Derecho Penal Parte Especial')">Derecho Penal Parte Especial</div>
+      <div class="curso" onclick="mostrarInfo('Obligaciones')">Obligaciones</div>
+    </div>
+  </div>
+
+  <!-- Modal de información -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span onclick="cerrarModal()" class="close">&times;</span>
+      <h3 id="modal-title">Curso</h3>
+      <p id="modal-desc">Aquí irá la información del curso.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
